@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4" class="name">Monas</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="photo">
+                <img src="assets/monas.jpg" alt="Monas" onclick="popup('popup')">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="detail"><button class="detail-btn" onclick="popup('popup')">Detail</button></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="name">Kota Tasikmalaya</td>
+            <td colspan="2" class="name">Kota Yogyakarta</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="photo-consistent">
+                <img src="assets/tasikmalaya.jpg" alt="Kota Tasikmalaya" onclick="popup('popup1')">
+            </td>
+            <td colspan="2" class="photo-consistent">
+                <img src="assets/yogyakarta.jpg" alt="Kota Yogyakarta" onclick="popup('popup2')">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="detail"><button class="detail-btn" onclick="popup('popup1')">Detail</button></td>
+            <td colspan="2" class="detail"><button class="detail-btn" onclick="popup('popup2')">Detail</button></td>
+        </tr>
+        <tr>
+            <td class="name">Candi Borobudur</td>
+            <td class="name">Tirta Alam</td>
+            <td class="name">Jepang</td>
+            <td class="name">Kyoto</td>
+        </tr>
+        <tr>
+            <td class="photo-consistent">
+                <img src="assets/candi_borobudur.jpg" alt="Candi Borobudur" onclick="popup('popup3')">
+            </td>
+            <td class="photo-consistent">
+                <img src="assets/tirta.jpg" alt="Tirta Alam" onclick="popup('popup4')">
+            </td>
+            <td class="photo-consistent">
+                <img src="assets/jepang.jpeg" alt="Jepang" onclick="popup('popup5')">
+            </td>
+            <td class="photo-consistent">
+                <img src="assets/kyoto.jpg" alt="Kyoto" onclick="popup('popup6')">
+            </td>
+        </tr>
+        <tr>
+            <td class="detail"><button class="detail-btn" onclick="popup('popup3')">Detail</button></td>
+            <td class="detail"><button class="detail-btn" onclick="popup('popup4')">Detail</button></td>
+            <td class="detail"><button class="detail-btn" onclick="popup('popup5')">Detail</button></td>
+            <td class="detail"><button class="detail-btn" onclick="popup('popup6')">Detail</button></td>
+        </tr>
+    </table>
+    
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup')">&times;</span>
+            <p>Monas, atau Monumen Nasional, adalah menara setinggi 132 meter yang terletak di pusat Lapangan Merdeka, Jakarta Pusat. Monumen ini melambangkan perjuangan kemerdekaan Indonesia.</p>
+        </div>
+    </div>
+
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <p>Kota Tasikmalaya adalah sebuah kota di provinsi Jawa Barat, Indonesia. Terkenal dengan keindahan alam dan budayanya, Kota Tasikmalaya menawarkan berbagai tempat wisata menarik seperti pantai, danau, dan taman nasional.</p>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <p>Kota Yogyakarta, sering disebut Jogja, adalah sebuah kota budaya di Indonesia. Kota ini terkenal dengan keraton, candi-candi kuno seperti Candi Prambanan dan Borobudur, serta keanekaragaman kulinernya.</p>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup3')">&times;</span>
+            <p>Candi Borobudur adalah candi Buddha terbesar di dunia, terletak di Magelang, Jawa Tengah. Candi ini merupakan warisan budaya UNESCO dan dikenal dengan struktur stupa yang megah serta relief yang menggambarkan ajaran Buddha.</p>
+        </div>
+    </div>
+
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup4')">&times;</span>
+            <p>Tirta Alam adalah sebuah tempat wisata alam yang menawarkan pemandangan indah dan kegiatan outdoor. Terletak di kawasan hijau yang sejuk, Tirta Alam cocok untuk relaksasi dan menikmati keindahan alam.</p>
+        </div>
+    </div>
+
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup5')">&times;</span>
+            <p>Jepang, negara kepulauan di Asia Timur, terkenal dengan budayanya yang unik, teknologi canggih, dan keindahan alamnya seperti gunung Fuji dan taman-taman bunga sakura. Jepang juga dikenal dengan makanan khasnya seperti sushi dan ramen.</p>
+        </div>
+    </div>
+
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup6')">&times;</span>
+            <p>Kyoto adalah kota di Jepang yang dikenal dengan warisan budaya yang kaya, termasuk kuil-kuil kuno, taman-taman tradisional, dan festival-festival musiman. Kyoto merupakan pusat budaya Jepang dengan arsitektur tradisional yang mempesona.</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
